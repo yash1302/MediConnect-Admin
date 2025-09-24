@@ -69,7 +69,9 @@ Before setting up the project, ensure you have:
 
 - [Node.js](https://nodejs.org/) (v16 or higher)
 - [Git](https://git-scm.com/)
-- A modern web browser (e.g., Chrome, Firefox)
+- A modern web browser (e.g., Chrome, Firefox
+- Access to the [MediConnect-API](https://github.com/Lord-Vesta/MediConnect-API) for backend functionality
+
 
 ## Installation
 
@@ -93,13 +95,22 @@ To set up MediConnect-Admin locally, follow these steps:
    npm install
    ```
 
-4. **Run the Development Server**:
+4. **Set Up Environment Variables**:
+   Create a `.env` file in the root directory and configure the API endpoint:
+
+   ```plaintext
+   VITE_BACKEND_URL= http://localhost:5000/
+   ```
+
+   Ensure the [MediConnect-API](https://github.com/Lord-Vesta/MediConnect-API) is running and accessible.
+
+5. **Run the Development Server**:
 
    ```bash
    npm run dev
    ```
 
-5. **Open the Application**:
+6. **Open the Application**:
    Open your browser and go to `http://localhost:5173` (or the port shown in the terminal).
 
 ## License
