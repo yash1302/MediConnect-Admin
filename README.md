@@ -1,6 +1,5 @@
 # MediConnect-Admin
 
-🔗 **Live Demo**: [MediConnect-Admin](https://medi-connect-api-kmpz.vercel.app)
 
 ## Overview
 
