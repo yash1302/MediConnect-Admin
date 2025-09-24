@@ -1,5 +1,5 @@
 // src/components/ChatWindow.jsx
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const ChatWindow = ({
   selectedPatient,
@@ -9,7 +9,13 @@ const ChatWindow = ({
   handleSend,
   userId,
 }) => {
+  const messagesEndRef = useRef(null);
 
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
   return (
     <div className="w-full flex-1 flex flex-col">
       {/* Doctor Header */}
@@ -47,6 +53,7 @@ const ChatWindow = ({
             </div>
           </div>
         ))}
+        <div ref={messagesEndRef} />
       </div>
 
       {/* Input */}

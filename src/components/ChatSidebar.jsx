@@ -10,7 +10,7 @@ const ChatSidebar = ({ doctors, selectedPatient, setSelectedPatient }) => {
           <li
             key={doc._id}
             className={`flex items-center gap-3 p-2 mb-2 rounded-lg cursor-pointer hover:bg-gray-200 ${
-              selectedPatient.id === doc.id ? "bg-blue-100" : ""
+              selectedPatient._id === doc._id ? "bg-blue-100" : ""
             }`}
             onClick={() => setSelectedPatient(doc)}
           >

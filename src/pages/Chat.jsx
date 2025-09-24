@@ -126,7 +126,7 @@ export default function Chat() {
   }, [roomId]);
 
   return (
-    <div className=" m-8 flex h-[80vh] w-[80vw] bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className=" m-8 flex h-[90vh] w-[80vw] bg-white rounded-lg shadow-lg overflow-hidden">
       {patients && selectedPatient && (
         <>
           <ChatSidebar
